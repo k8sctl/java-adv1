@@ -6,7 +6,8 @@ public class StartTest2Main {
 
     public static void main(String[] args) {
         Runnable runnable = new ConterRunnable();
-        Thread thread = new Thread(runnable);
+        Thread thread = new Thread(runnable, "counter");
+        // thread.setName("counter");
         thread.start();
     }
 

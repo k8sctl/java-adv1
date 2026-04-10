@@ -20,6 +20,7 @@ public class StartTest3Main {
             }
         };
         Thread thread = new Thread(runnable);
+        thread.setName("counter");
         thread.start();
     }
 }
